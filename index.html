@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Artemía - Bisutería</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>ARTEMÍA</h1><p>Bisutería & Manualidades</p></header>
+<main id="catalogo"></main>
+<a href="https://wa.me/51999999999" class="whatsapp" target="_blank">💬</a>
+<script>
+let data = JSON.parse(localStorage.getItem("productos"));
+if (!data) {
+ fetch("products.json").then(r=>r.json()).then(j=>{localStorage.setItem("productos",JSON.stringify(j));location.reload();});
+} else { mostrar(data); }
+function mostrar(data){
+ const c=document.getElementById("catalogo");
+ data.forEach(cat=>{
+  const s=document.createElement("section");
+  s.innerHTML=`<h2>${cat.categoria}</h2><div class='grid'></div>`;
+  const g=s.querySelector(".grid");
+  cat.productos.forEach(p=>{
+    g.innerHTML+=`<div class='producto'><img src='${p.imagen}'><h3>${p.nombre}</h3><p>${p.descripcion}</p><p class='precio'>S/ ${p.precio}</p><a class='boton' href='https://wa.me/51999999999?text=Hola%20quiero%20comprar%20${p.nombre}' target='_blank'>Comprar</a></div>`;
+  });
+  c.appendChild(s);
+ });
+}
+</script>
+</body>
+</html>

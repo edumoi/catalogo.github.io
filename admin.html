@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="style.css"></head><body>
+<div id="login"><h2>Admin Login</h2><input id="user"><input id="pass" type="password"><button onclick="login()">Entrar</button><p id="msg"></p></div>
+<div id="panel" style="display:none;">
+<h1>Panel Admin</h1>
+<input id="nombre"><input id="precio" type="number"><input id="desc"><input id="img" type="file"><select id="cat"></select>
+<button onclick="agregar()">Agregar</button><button onclick="logout()">Salir</button>
+</div>
+<script>
+const ADMIN_USER="admin",ADMIN_PASS="1234";
+if(localStorage.getItem("login")==="ok")mostrar();
+function login(){if(user.value===ADMIN_USER&&pass.value===ADMIN_PASS){localStorage.setItem("login","ok");mostrar();}else{msg.innerText="Error";}}
+function logout(){localStorage.removeItem("login");location.reload();}
+function mostrar(){login.style.display="none";panel.style.display="block";data=JSON.parse(localStorage.getItem("productos"));cat.innerHTML="";data.forEach((c,i)=>cat.innerHTML+=`<option value='${i}'>${c.categoria}</option>`);}
+function agregar(){const r=new FileReader();r.onload=()=>{data[cat.value].productos.push({nombre:nombre.value,descripcion:desc.value,precio:precio.value,imagen:r.result});localStorage.setItem("productos",JSON.stringify(data));alert("Agregado");};r.readAsDataURL(img.files[0]);}
+</script></body></html>
