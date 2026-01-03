@@ -1,1 +1,53 @@
-[{"categoria":"Pulseras","productos":[{"nombre":"Pulsera Corazón","descripcion":"Hilo rojo","precio":8,"imagen":""}]}]
+[
+  {
+    "categoria": "Aretes",
+    "productos": [
+      {
+        "nombre": "Aretes Mariposa",
+        "descripcion": "Acrílico liviano",
+        "precio": 10,
+        "imagen": ""
+      },
+      {
+        "nombre": "Aretes Gota",
+        "descripcion": "Elegantes y brillantes",
+        "precio": 12,
+        "imagen": ""
+      }
+    ]
+  },
+  {
+    "categoria": "Collares",
+    "productos": [
+      {
+        "nombre": "Collar Luna",
+        "descripcion": "Dije plateado",
+        "precio": 15,
+        "imagen": ""
+      },
+      {
+        "nombre": "Collar Flor",
+        "descripcion": "Resina con flores",
+        "precio": 18,
+        "imagen": ""
+      }
+    ]
+  },
+  {
+    "categoria": "Pulseras",
+    "productos": [
+      {
+        "nombre": "Pulsera Corazón",
+        "descripcion": "Hilo rojo con dije",
+        "precio": 8,
+        "imagen": ""
+      },
+      {
+        "nombre": "Pulsera Boho",
+        "descripcion": "Cuentas de colores",
+        "precio": 10,
+        "imagen": ""
+      }
+    ]
+  }
+]
