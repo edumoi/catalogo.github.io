@@ -1,53 +1,23 @@
 [
   {
-    "categoria": "Aretes",
-    "productos": [
-      {
-        "nombre": "Aretes Mariposa",
-        "descripcion": "Acrílico liviano",
-        "precio": 10,
-        "imagen": ""
-      },
-      {
-        "nombre": "Aretes Gota",
-        "descripcion": "Elegantes y brillantes",
-        "precio": 12,
-        "imagen": ""
-      }
-    ]
+    "name": "Golden Essence Necklace",
+    "description": "Handcrafted 18k gold plated necklace with a minimalist pendant.",
+    "price": "$85.00",
+    "image": "images/necklace.jpg",
+    "whatsapp": "1234567890"
   },
   {
-    "categoria": "Collares",
-    "productos": [
-      {
-        "nombre": "Collar Luna",
-        "descripcion": "Dije plateado",
-        "precio": 15,
-        "imagen": ""
-      },
-      {
-        "nombre": "Collar Flor",
-        "descripcion": "Resina con flores",
-        "precio": 18,
-        "imagen": ""
-      }
-    ]
+    "name": "Silver Moonlight Ring",
+    "description": "Sterling silver ring featuring a polished moonstone center.",
+    "price": "$60.00",
+    "image": "images/ring.jpg",
+    "whatsapp": "1234567890"
   },
   {
-    "categoria": "Pulseras",
-    "productos": [
-      {
-        "nombre": "Pulsera Corazón",
-        "descripcion": "Hilo rojo con dije",
-        "precio": 8,
-        "imagen": ""
-      },
-      {
-        "nombre": "Pulsera Boho",
-        "descripcion": "Cuentas de colores",
-        "precio": 10,
-        "imagen": ""
-      }
-    ]
+    "name": "Artisan Clay Earrings",
+    "description": "Unique handcrafted clay earrings with a marble finish.",
+    "price": "$35.00",
+    "image": "images/earrings.jpg",
+    "whatsapp": "1234567890"
   }
 ]
